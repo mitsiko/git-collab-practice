@@ -10,7 +10,8 @@ data.forEach((value) => {
 // Compute stats
 const sum = data.reduce((a, b) => a + b, 0);
 const mean = sum / data.length;
+const max = Math.max(...data);
 
 // Display stats
 document.getElementById("stats").innerText =
-  "Sum: " + sum + " | Mean: " + mean;
+  "Sum: " + sum + " | Mean: " + mean + " | Max: " + max;
